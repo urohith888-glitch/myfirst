@@ -2,23 +2,30 @@
 <html>
     <head>
         <style>
-            .g{
-                margin-top:100px;
-                margin-left:475px;
-                width:300px;
-            }
-            .s{
-                margin-left:350px;
-                display:block;
-                margin-top:20px;
-                height:40px;
-                width:600px;
-                border-radius:50px;
-            }
+            .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.g {
+    width: 300px;
+}
+
+.s {
+    margin-top: 20px;
+    height: 40px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 50px;
+}
         </style>
     </head>
     <body>
-        <img class="g" src="thumbnails/google.png" alt="google">
-        <input class="s" type="text" placeholder="  Search Google or type a URL">
+        <div class="container">
+            <img class="g" src="thumbnails/google.png" alt="google">
+            <input class="s" type="text" placeholder="  Search Google or type a URL">
+        </div>
     </body>
 </html>
